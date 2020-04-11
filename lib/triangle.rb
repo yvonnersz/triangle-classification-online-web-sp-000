@@ -12,8 +12,8 @@ class Triangle
 
   def kind
     @lengths.sort
-    raise TriangleError if @lengths.any? {|length| length <= 0}
-    raise TriangleError if (@lengths.sort[0] + @lengths.sort[1] <= @lengths.sort[2])
+    # raise TriangleError if @lengths.any? {|length| length <= 0}
+    # raise TriangleError if (@lengths.sort[0] + @lengths.sort[1] <= @lengths.sort[2])
 
     if @lengths.uniq.count == 1
       :equilateral
